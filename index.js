@@ -79,7 +79,7 @@ async function fetchUserWeatherInfo(coordinates) {
     }
     catch (err) {
         loadingScreen.classList.remove("active");
-        //hw
+        alert("Pless Grent Your Location Access");
     }
 }
 
@@ -126,7 +126,7 @@ function getLocation() {
     }
     else {
         alert("Geolocation Suppoert Unavailable");
-        // HW show an alert for no geolocation suppoet available
+        // show an alert for no geolocation suppoet available
     }
 }
 
@@ -175,6 +175,6 @@ async function fetchSearchWeatherInfo(city) {
         renderWeatherInfo(data);
     }
     catch (err) {
-        // HW
+        alert("Server Down Ples Try Later ");
     }
 }
